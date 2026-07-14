@@ -60,7 +60,7 @@ function M.run_all_tests()
 
     return fail_count == 0
 end
-
+--准备接受冲突吧
 if arg and arg[0] and string.match(arg[0], "git_practice_test%.lua$") then
     local ok = M.run_all_tests()
     os.exit(ok and 0 or 1)
